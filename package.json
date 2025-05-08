@@ -1,0 +1,16 @@
+{
+  "name": "examen-extraordinaria-server",
+  "version": "1.0.0",
+  "description": "A basic Fastify server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "fastify": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
