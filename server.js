@@ -35,8 +35,8 @@ fastify.get('/combo/:id', async (request, reply) => {
   return { combo: selectedItems };
 });
 
-fastify.get('/color/:color', async (request, reply) => {
-  const colorId = parseInt(request.params.color, 10);
+fastify.post('/color', async (request, reply) => {
+  const colorId = parseInt(request.body.color, 10);
   const colorItem = items.find(item => item.id === colorId);
 
   if (!colorItem) {
